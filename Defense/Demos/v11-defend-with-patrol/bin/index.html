@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>hockey</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<script>
+		var flashvars = {
+		};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"hockey"
+		};
+		swfobject.embedSWF(
+			"hockey.swf", 
+			"altContent", "600px", "480px", "10.0.0", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden; background: #000; color: #fff; font-family: Verdana; font-size: 12px;}
+		body { margin:0; }
+	</style>
+</head>
+<body>
+	<div id="altContent">
+		<h1>hockey</h1>
+		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+	</div>
+	<div>
+		<p>Hockey demo <small>(<strong>NOTICE:</strong> blue team is 100% AI controlled)</small></p>
+		<p>Use mouse cursor to guide/aim your athlete. Click to hit the puck. Some cheating keys:</p>
+		<ul>
+			<li><strong>C</strong>: select another athlete to control;</li>
+			<li><strong>R</strong>: place puck at the center of the rink;</li>
+			<li><strong>G</strong>: organize the match (athletes take places);</li>
+		</ul>
+		<p>This is a WIP and I've focused on the AI, so it's not that easy to play as a human.<br/> The best part is to keep the mouse cursor at the center and watch the AI play :D.</p>
+	</div>
+</body>
+</html>
